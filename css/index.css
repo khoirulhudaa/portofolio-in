@@ -224,6 +224,10 @@ section {
     animation-fill-mode: both;
 }
 
+.title-baselibs {
+    display: none;
+}
+
 @-webkit-keyframes bounce2 {
     0%, 100% {
       -webkit-transform: translateY(20px);
