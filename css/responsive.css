@@ -1,8 +1,9 @@
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .section1 {
         position: relative;
         height: 679px;
         padding-top: 0px;
+        padding-left: 10px;
         border-radius: 0 0 300px 0px;
         z-index: 55;
         display: flex;
@@ -36,6 +37,16 @@
         position: absolute;
         left: 0;
         transform: rotate(-30deg) scale(0.9);
+    }
+        
+    @-webkit-keyframes bounce2 {
+        0%, 100% {
+        -webkit-transform: translateY(10px);
+        }
+        50% {
+        -webkit-transform: translateY(-25px);
+        -webkit-transform: translateX(5px);
+        }
     }
     
     .hero-desc {
@@ -173,7 +184,7 @@
     .section2 h2 {
         color: rgb(24, 23, 23);
         font-size: 40px;
-        margin-left: 15px;
+        margin-left: 20px;
         font-weight: bold;
     }
     
@@ -432,12 +443,18 @@
         position: relative;
         width: 80vw;
         z-index: 4;
-        height: 400px;
+        height: 700px;
         background-color: transparent;
         border-radius: 0 0 20px 0;
-        background-image: radial-gradient(transparent 85%, #e0e5ff98 20%);
+        background-image: none;
         background-size: 10px 10px;
         background-color: transparent;
+    }
+        
+    .section5 h1 {
+        color:  transparent;
+        -webkit-text-stroke: 3px white;
+        font-size: 72px;
     }
     
     .section5 a {
@@ -451,7 +468,7 @@
     .section5 img {
         position: absolute;
         top: -135px;
-        margin-top: 100px;
+        margin-top: 300px;
         right: -190px;
         height: 500px;
         z-index: -1;
@@ -495,7 +512,7 @@
         height: 5vh;
         border: 0.88px solid rgba(128, 128, 128, 0.315);
         display: block;
-        background-color: #fff;
+        background-color: rgb(119, 119, 119);
         animation: blk 1s ease-in-out forwards;
     }
     
@@ -572,6 +589,7 @@
     .list-product ul {
         display: flex;
         position: relative;
+        left: -20px;
         top: -100px;
         flex-direction: column;
         text-align: center;
@@ -594,5 +612,305 @@
         width: 100px;
         margin-left: -20px;
     }   
+        
+    .bg-ds {
+        transform: scale(0.7) rotate(90deg);
+        width: auto;
+        height: auto;
+        top: 100px;
+        left: 10px;
+    }
+    
+    .bg-ds2 {
+        display: none;
+    }
+        
+    .build {
+        position: absolute;
+        left: 20px;
+        font-size: 20px;
+        top: 120px;
+    }
+
+    .descode {
+        position: absolute;
+        top: 30px;
+        margin-left: 30px;
+    }
+
+    .section5 a {
+        bottom: 100px;
+        color: white;
+        left: -100px;
+        width: max-content;
+        overflow: hidden;
+        margin-top: 100px;
+        position: absolute;
+        font-size: 40px;
+    }
+        
+    .baselibs-left {
+        display: none;
+    }
+    
+    .baselibs {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0px;
+        height: max-content;
+        width: 100vw;
+        z-index: 9;
+        background-color: #fff;
+    }
+
+    .baselibs .wrap-baselibs img {
+        width: 30%;
+    }
+
+    .wrap-baselibs {
+        display: flex;
+        background-color: rgb(31, 31, 31);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 0 ;
+        width: 100vw;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 95%;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .baselibs-left {
+        display: none;
+    }
+
+    .baselibs-left ul li {
+        list-style: none;
+        color: white;
+    }
+
+    .baselibs-left i {
+        margin-right: 12px;
+    }
+
+    .baselibs-right {
+        position: relative;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(82, 82, 82);
+        height: 100%;
+        padding-bottom: 40px;
+
+    }
+
+    .navbar-baselibs ul {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-baselibs ul li {
+        list-style: none;
+        font-weight: bold;
+        margin: 0 20px 0 0;
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar-baselibs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        color: white;
+    }
+
+    .btn-baselibs {
+        display: none;
+    }
+
+    .banner-baselibes {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap-banner-baselibs {
+        border-radius: 12px;
+        width: 90%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(70, 70, 70);
+        box-shadow: 0 0 8px rgba(63, 63, 63, 0.822);
+    }
+
+    .banner-right {
+      display: none;
+    }
+
+    .banner-left {
+        position: relative;
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner-left h1 {
+        position: relative;
+        top: -25px;
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+
+    .brand-baselibs {
+        width: 100%;
+        padding: 30px 30px 30px 10px;
+        height: max-content;
+    }
+
+    .brand-baselibs img {
+        height: 50px;
+    }
+
+    .baselibs-left ul li {
+        position: relative;
+        left: -40px;
+        margin: 0 0 40px 0;
+        width: 160px;
+        padding: 10px 10px 10px 40px;
+        border-radius: 0 30px 30px  0px;
+        transition: 0.4s;
+    }
+
+    .baselibs-left ul li:hover {
+        cursor: pointer;
+        width: 160px;
+        transition: 0.4s;
+        background-color: rgb(78, 78, 78);
+        border-radius: 0 30px 30px  0px;
+    }
+
+    .banner-left button {
+        position: absolute;
+        border: none;
+        outline: none;
+        border-radius: 74px;
+        color: white;
+        bottom: 40px;
+        left: 20px;
+        background-color: rgb(255, 187, 0);
+        font-weight: 500;
+        cursor: pointer;
+        z-index: 3;
+        font-size: 20px;
+        padding: 10px;
+        box-shadow: 0 0 16px rgba(255, 187, 0, 0.753);
+    }
+
+    .packages-baselibs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px;
+        height: max-content;
+        box-sizing: border-box;
+        align-items: left;
+        width: 90%;
+        border-radius: 10px;
+        background-color: rgb(70, 70, 70);
+        box-shadow: 0 0 8px rgba(63, 63, 63, 0.822);
+        position: relative;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-right: 0;
+        overflow-x: auto;
+    }
+
+    .wrap-baselibs-right {
+        overflow-y: scroll;
+        height: max-content;
+    }
+
+    .wrap-packages-baselibs {
+        display: flex;
+        width: 98%;
+    }
+
+    .card-packages {
+        cursor: pointer;
+        width: 140px;
+        height: max-content;
+        margin: 10px 10px 10px 15px;
+        box-shadow: 0 0 8px rgba(63, 63, 63, 0.822);
+        border-radius: 6px;
+        background-color: rgb(43, 41, 41);
+        transition: 0.4s;
+        padding: 30px;
+    }
+
+    .card-packages:hover {
+        transition: 0.4s;
+        position: relative;
+        top: -10px;
+    }
+
+    .wrap-right {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .card-packages h4 {
+        font-size: 23px;
+    }
+
+    .card-packages .author {
+        position: relative;
+        top: -30px;
+        left: 4px;
+        width: max-content;
+        font-size: 10px;
+        opacity: 0.8;
+    }
+
+    .packages-baselibs h3 {
+        margin-left: 20px;
+    }
+
+    .card-packages p {
+        position: relative;
+        border: none;
+        outline: none;
+        border-radius: 74px;
+        top: -30px;
+        transform: scale(0.88);
+        color: white;
+        left:-15px;
+        background-color: rgb(255, 187, 0);
+        font-weight: 500;
+        cursor: pointer;
+        z-index: 3;
+        width: max-content;
+        padding: 10px;
+        box-shadow: 0 0 16px rgba(255, 187, 0, 0.753);
+    }
 
 }

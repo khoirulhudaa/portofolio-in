@@ -371,6 +371,18 @@ section {
     margin-left: 100px;
 }
 
+.build {
+    position: absolute;
+    left: 130px;
+    top: 160px;
+}
+
+.descode {
+    position: absolute;
+    top: 0px;
+    margin-left: 100px;
+}
+
 .wrap-sec3 {
     width: 100vw;
     display: flex;
