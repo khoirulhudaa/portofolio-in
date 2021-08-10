@@ -1,4 +1,9 @@
 @media screen and (max-width: 550px) {
+    
+    body, html {
+        overflow-x: hidden;
+    }
+    
     .section1 {
         position: relative;
         height: 679px;
